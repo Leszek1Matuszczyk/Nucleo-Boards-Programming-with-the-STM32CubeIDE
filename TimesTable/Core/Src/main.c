@@ -60,6 +60,7 @@ void uart_Text(UART_HandleTypeDef * huart,char buffer[], int m)
 	HAL_UART_Transmit(huart, buffer, strlen(buffer), HAL_MAX_DELAY);
 	if(m==1)HAL_UART_Transmit(huart, "\r\n", 2, HAL_MAX_DELAY);
 
+
 }
 
 void uart_Char(UART_HandleTypeDef * huart,char c, int m)
